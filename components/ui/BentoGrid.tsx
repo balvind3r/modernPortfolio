@@ -6,7 +6,7 @@ import { Globe } from "./Globe";
 import { GlobeDemo } from "./GridGlobe";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import animationData from "@/data/confetti.json";
 import { MagicButton } from "./MagicButton";
 
@@ -42,6 +42,7 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  descClassName,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -53,15 +54,25 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  descClassName?: string;
 }) => {
   const [copied, setCopied] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const handleCopy = () => {
-    navigator.clipboard.writeText("balvindersingh485280@gmail.com");
-    setCopied(true);
-    setTimeout(() => {
-      setCopied(false);
-    }, 3000);
+    if (isClient && navigator.clipboard) {
+      navigator.clipboard.writeText("balvindersingh485280@gmail.com");
+      setCopied(true);
+      setTimeout(() => {
+        setCopied(false);
+      }, 3000);
+    }
   };
+  
 
   return (
     <div
@@ -77,6 +88,11 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
+      {/* {id === 1 && (
+        <div className="">
+
+        </div>
+      )} */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
@@ -116,10 +132,11 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-5 "
           )}
         >
-          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-sx lg:text-base z-10">
+          {/* text-sm md:text-sx lg:text-base */}
+          <div className={`${descClassName} font-sans text-[#c1c2d3]  z-10`}>
             {description}
           </div>
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+          <div className={`${(id === 1)? "w-full mb-3 lg:mb-10 text-[#ececf0] lg:text-3xl text-base" :"max-w-96 lg:text-3xl text-lg"} font-sans font-bold z-10`}>
             {title}
           </div>
 
@@ -140,7 +157,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-2">
                 <span className="py-5 px-3  rounded-lg text-center bg-[#10132E]" />
-                {["React.js", "Next.js", "Typescript"].map((item) => (
+                {["AceternityUI", "Tailwind", "ShadCN"].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-3 lg:px-2 px-3 text-xs lg:text-base  opacity-50 lg:opacity-85 rounded-lg text-center bg-[#10132E]"
@@ -155,17 +172,20 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
-                <Lottie
-                  key={copied ? 'copied' : 'not-copied'}
-                  options={{
-                    loop: copied,
-                    autoplay: copied,
-                    animationData: animationData,
-                    rendererSettings: {
-                      preserveAspectRatio: "xMidYMid slice",
-                    },
-                  }}
-                />
+              {isClient && (
+                  <Lottie
+                    key={copied ? 'copied' : 'not-copied'}
+                    options={{
+                      loop: copied,
+                      autoplay: copied,
+                      animationData: animationData,
+                      rendererSettings: {
+                        preserveAspectRatio: "xMidYMid slice",
+                      },
+                    }}
+                  />
+                )}
+
               </div>
 
               <MagicButton

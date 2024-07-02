@@ -87,3 +87,72 @@
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+
+html{
+  background-color: #000319;
+}
+
+
+@font-face {
+  font-family: "space_normal";
+  src: url("/Fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+  /* font-weight: normal;
+  font-style: normal; */
+}
+/* @font-face {
+  font-family: "Geostar";
+  src: url("/Fonts/Geostar/Geostar-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeostarFill";
+  src: url("/Fonts/Geostar/GeostarFill-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+.SG_normal {
+  font-family: "Space_normal", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.SG_300 {
+  font-family: "Space_normal", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.SG_400 {
+  font-family: "Space_normal", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.SG_500 {
+  font-family: "Space_normal", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.SG_600 {
+  font-family: "Space_normal", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.SG_700 {
+  font-family: "Space_normal", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* .snap-container {
+  scroll-snap-type: y mandatory;
+}
+
+.snap-child {
+  scroll-snap-align: start;
+} */

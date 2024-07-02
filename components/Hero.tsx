@@ -4,6 +4,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { MagicButton } from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { TextSubHeading } from "./ui/text-subheading-fadeIn";
+import { socialMedia } from "@/data";
 
 export const Hero = () => {
   return (
@@ -28,7 +29,7 @@ export const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
             <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-                Hello everyone!
+                Hey There!
             </h2>
 
             <TextGenerateEffect
@@ -40,7 +41,7 @@ export const Hero = () => {
                 words="A developer turning code into reality."
             />
 
-            <a href="">
+            <a href="/resume">
                 <MagicButton
                     title="View my resume"
                     icon = {<FaLocationArrow/>}
@@ -49,6 +50,17 @@ export const Hero = () => {
             </a>
         </div>
       </div>
+      <div className='flex -mt-10 md:flex-row flex-col justify-center items-center'>
+        <div className='flex items-center md:gap-3 gap-6'>
+            {socialMedia.map((profile) => (
+                <div key={profile.id} className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-blac-200 rounded-lg border border-black-300'>
+                    <a href={profile.link} target="_blank">
+                    <img src={profile.img} alt={profile.img} width={20} height={20}/>
+                    </a>
+                </div>
+            ))}
+        </div>
+    </div>
     </div>
   );
 };
