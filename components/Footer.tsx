@@ -15,7 +15,7 @@ const Footer = () => {
             Would you like to <span className='text-purple'>collaborate</span> on some projects?
         </h1>
         <p className='text-white-200 md:mt-10 my-5 text-center'>
-            Let's discuss some amazing ideas.
+            Let&apos;s discuss some amazing ideas.
         </p>
         <a href="mailto:balvindersingh485280">
             <MagicButton title={`Let's get in touch`} icon ={ <FaLocationArrow/>} position="right"/>

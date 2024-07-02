@@ -81,7 +81,7 @@ export const navItems = [
     {
       id: 1,
       title: "LogiPulse - KPI Tracker",
-      des: "A KPI monitoring software for Mahindra Logistics. The software tracks and monitors KPI's of all warehouses.",
+      des: "A KPI monitoring software for Mahindra Logistics. The software tracks and monitors KPI&apos;s of all warehouses.",
       img: "/p1.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/postman.svg", "/mysql.svg"],
       link: "https://inner-mll.vercel.app/login",

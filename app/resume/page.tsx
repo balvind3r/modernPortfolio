@@ -117,7 +117,7 @@ const Resume = () => {
                 Balvinder Singh
               </p>
               <p className="SG_300 mb-8 lg:text-base max-lg:text-center">
-                I'm a final year student from NSUT-Delhi, currently pursuing
+                I&apos;m a final year student from NSUT-Delhi, currently pursuing
                 Computer Science with Artificial Intelligence. I love to
                 experiment with new technologies and tech-stacks. In addition to
                 my academics, I have actively participated in and organized
@@ -136,14 +136,14 @@ const Resume = () => {
                   <p>SDE Intern</p>
                   <div className="flex flex-row SG_300 justify-center items-center lg:text-sm text-[#c3c0bc] gap-x-1">
                     <MdDateRange color="#c3c0bc" className="h-5 w-5" />
-                    <p>Feb'24 - April'24 </p>
+                    <p>Feb&apos;24 - April&apos;24 </p>
                     <p className="max-md:hidden">| 2 Months</p>
                   </div>
                 </div>
                 <div className="SG_300 lg:text-base text-sm ml-6 mt-3 ">
                   <ul className="list-disc">
                     <li>
-                      Completely revamped LogiPulse - Mahindra’s KPI monitoring
+                      Completely revamped LogiPulse - Mahindra&apos;s KPI monitoring
                       software for warehouses
                     </li>
                     <li>
@@ -163,8 +163,8 @@ const Resume = () => {
                   <p>Business Intern</p>
                   <div className="flex flex-row SG_300 justify-center items-center lg:text-sm text-[#c3c0bc] gap-x-1">
                     <MdDateRange color="#c3c0bc" className="h-5 w-5" />
-                    <p className="max-lg:hidden">June'24 - July'24 </p>
-                    <p className="lg:hidden">Jun'23-Jul'23 </p>
+                    <p className="max-lg:hidden">June&apos;24 - July&apos;24 </p>
+                    <p className="lg:hidden">Jun&apos;23-Jul&apos;23 </p>
                     <p className="max-md:hidden">| 5 Weeks</p>
                   </div>
                 </div>
@@ -172,10 +172,10 @@ const Resume = () => {
                   <ul className="list-disc">
                     <li>
                       Worked alongside the CEO to understand and analyze the
-                      company’s cashflows.
+                      company&apos;s cashflows.
                     </li>
                     <li>
-                      Analysed company’s expenditure to ensure positive
+                      Analysed company&apos;s expenditure to ensure positive
                       cashflows.
                     </li>
                     <li>
