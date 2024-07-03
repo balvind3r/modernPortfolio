@@ -17,11 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     
-    <html className= ""lang="en">
+    <html className= "no-scrollbar"lang="en">
       <head>
       <link rel="icon" href="/favicon.png" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} no-scrollbar`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

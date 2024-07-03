@@ -83,6 +83,22 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+/* .slide-content .scroller {
+  width: 1024px;
+}
+
+* {
+  outline: 1px solid #f00 !important;
+} */
+
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }

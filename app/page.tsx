@@ -17,15 +17,18 @@ export default function Home() {
           <FloatingNav navItems={navItems} />
         </div>
         {/* <div className="snap-proximity snap-y overflow-scroll"> */}
-        <div className="snap-start">
+        {/* <div className="snap-start"> */}
+        <div className="">
           <Hero />
         </div>
-        <div className="snap-start lg:mt-14 mt-20">
+        {/* <div className="snap-start lg:mt-14 mt-20"> */}
+        <div className=" lg:mt-14 mt-20">
           <Grid />
         </div>
-        <div className="snap-start">
+        {/* <div className="snap-start"> */}
+
+          <div>
           <RecentProjects />
-          {/* </div> */}
         </div>
         <div>
           <Experience/>
