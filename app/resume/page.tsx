@@ -23,7 +23,7 @@ const Resume = () => {
   };
 
   return (
-    <div className="bg-[#000319] SG_normal overflow-scroll">
+    <div className="bg-[#000319] SG_normal overflow-hidden">
       <a href="/">
       <span className="absolute top-10 left-10"><IoMdArrowRoundBack className="w-10 h-10"/></span>
       </a>

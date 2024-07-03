@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className= "h-full overflow-scroll"lang="en">
+    <html className= ""lang="en">
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
