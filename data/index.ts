@@ -81,19 +81,19 @@ export const navItems = [
     {
       id: 1,
       title: "LogiPulse - KPI Tracker",
-      des: "A KPI monitoring software for Mahindra Logistics. The software tracks and monitors KPI&apos;s of all warehouses.",
+      des: "A KPI monitoring software for Mahindra Logistics. The software tracks and monitors KPIs of all warehouses.",
       img: "/p1.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/postman.svg", "/mysql.svg"],
       link: "https://inner-mll.vercel.app/login",
     },
-    // {
-    //   id: 2,
-    //   title: "Yoom - Video Conferencing App",
-    //   des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    //   img: "/p2.svg",
-    //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    //   link: "https://github.com/adrianhajdin/zoom-clone",
-    // },
+    {
+      id: 2,
+      title: "Gym-Fyt - Your Fitness Companion",
+      des: "One stop application for all fitness exercises. From muscle-group to tutorials, we have it all.",
+      img: "/p2.svg",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/postman.svg", "/material.png"],
+      link: "https://gym-fyt.vercel.app/",
+    },
     // {
     //   id: 3,
     //   title: "AI Image SaaS - Canva Application",
