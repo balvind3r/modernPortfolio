@@ -1,0 +1,299 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+% \usepackage{geometry}
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+
+\end{flushright}
+
+\vspace{-5pt}
+
+W\begin{center}
+    \textbf{\Huge \scshape Balvinder Singh} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/balvind3r}{\underline{balvind3r}} $  $
+    \faIcon{code}
+    \href{https://www.balvinder.co}
+    {\underline{balvinder.co}} $  $
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/balvind3rsingh}{\underline{balvind3rsingh}} $  $
+    \faIcon{envelope}
+    \href{mailto:balvindersingh485280@gmail.com}
+    {\underline{balvindersingh485280@gmail.com}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Netaji Subhas University of Technology}{June 2025}
+      {B. Tech in Computer Science with Specialisation in AI}{}
+      
+    \vspace{4pt}
+
+      \textbf{Courses:} Data Structures \& Algorithms, Discrete Math, \\ Web-Development, Probability \& Statistics, Object-Oriented Programming\\
+
+  \resumeSubHeadingListEnd
+
+  
+% -------------------- EXPERIENCE --------------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+          \resumeProjectHeading
+          {\textbf{Mahindra Logistics} $|$ \footnotesize\emph{SDE Intern}\vspace{8pt}}{Feb. 2024 -- April 2024}
+          \vspace{-16pt}
+          \resumeItemListStart
+            \resumeItem{Completely revamped LogiPulse - Mahindra's KPI monitoring software for warehouses}
+            \resumeItem{Developed user-friendly frontend using modern frameworks}
+            \resumeItem{Implemented industry-level practices for version control}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{SSPS Global Pvt. Ltd.} $|$ \footnotesize\emph{Business Intern | Founder's Office}\vspace{8pt}}{June 2023 -- July 2023}
+          \vspace{-16pt}
+          \resumeItemListStart
+            \resumeItem{Worked alongside the CEO to understand and analyze the company's future prospects}
+            \resumeItem{Analysed company's expenditure to ensure positive cashflows}
+            \resumeItem{Prepared an exhaustive report for future expansions}
+          \resumeItemListEnd
+
+        % \subsection{Hobbies}
+          
+        %   \resumeProjectHeading
+        %   {\textbf{Playing the Drums}\vspace{8pt}}{2013 -- 2019}
+        %   {\small{Played the drums in symphonic, jazz, and marching bands}}
+
+        %   \resumeProjectHeading
+        %   {\textbf{3\textsuperscript{rd} Place Time Keeping Challenge Championship \footnotesize{(Time Keeping Assocation)}}\vspace{8pt}}{Feb. 2022 -- May 2022}
+        %   {\small{Won \$1500 nationally competing against high school students in counting seconds and minutes}}
+          
+    \resumeSubHeadingListEnd 
+    
+% -------------------- SKILLS --------------------
+
+% \section{Skills}
+% \vspace{-1em} % Adjust this value as needed to reduce the spacing
+% \begin{description}
+%     \item[Core Languages] C++ $|$ Python $|$ HTML $|$ JavaScript 
+%     \item[Web Development] React $|$ Next.Js $|$ TypeScript
+%     \item[Version Control] Git $|$ GitHub
+%     \item[Database Management] MySQL $|$ MongoDB
+% \end{description}
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: C/C++, Python, JavaScript/TypeScript, HTML/CSS, } \\
+     \textbf{Web Development}{: React.Js, Next.Js, RTK, TypeScript, ShadCN, Node.Js} \\
+     \textbf{Database Management}{: MySql, MongoDB} \\
+     \textbf{Version Control}{: Git, GitHub} 
+     
+     
+     % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+
+\section{Projects}
+    \resumeSubHeadingListStart
+          
+        \resumeProjectHeading
+        {\textbf{Gym-Fyt} $|$ \footnotesize\emph{Next.js, Material-UI, TypeScript, Tailwind | } \hfill \href{https://gym-fyt.vercel.app/}{\faIcon{external-link-alt} Visit Website}}{}
+        \resumeItemListStart
+            \resumeItem{Implemented an application to provide users with a comprehensive resource for finding specific exercises.}
+            \resumeItem{Integrated advanced search functionalities to reduce friction during exercise lookup, enhancing user experience.}
+            \resumeItem{Utilized Tailwind CSS for efficient styling and ensured cross-browser compatibility for seamless accessibility.}
+        \resumeItemListEnd
+          
+        \resumeProjectHeading
+        {\textbf{Portfolio Website} $|$ \footnotesize\emph{Next.js, Aceternity UI, TypeScript, Tailwind | } \hfill \href{https://www.balvinder.co}{\faIcon{external-link-alt} Visit Website}}{}
+        \resumeItemListStart
+            \resumeItem{Developed a personal portfolio website, focusing on clean design and smooth user interactions.}
+            \resumeItem{Implemented TypeScript for type safety and utilized Tailwind CSS for streamlined styling and responsiveness.}
+            \resumeItem{Deployed the site on Vercel with DNS hosting via Porkbun to ensure fast and reliable performance.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{LogiPulse} $|$ \footnotesize\emph{Next.js, TypeScript, MySQL, Node.js, React | } \hfill \href{https://inner-mll.vercel.app/}{\faIcon{external-link-alt} Visit Website}}{}
+        \resumeItemListStart
+            \resumeItem{Led the development of LogiPulse, an award-winning application created for the Mahindra Catapult Techathon.}
+            \resumeItem{Designed and implemented a robust workflow optimization tool for MLL Warehouses.}
+            \resumeItem{Adhered to industry-leading coding standards and practices to ensure scalability, maintainability, and performance.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+% -------------------- ACHIEVEMENTS --------------------
+\section{Awards \& Achievements}
+    % \resumeSubHeadingListStart
+    \vspace{4pt}
+        \resumeItemListStart 
+            \resumeItem{Secured first postion in Mahindra Logistics Catapult Techathon.}
+            \vspace{-4pt}
+            \resumeItem{Among top 30 teams selected for Smart India Hackathon.}
+            \vspace{-4pt}
+            \resumeItem{Finalists in HackBVICAM, InnovateX Hackathon, HackNSUT \& SRMHacks.}
+            \vspace{-4pt}
+            % \resumeItem{Acted as contingent leader for E-Summit IIT Bombay 2024, won awards in multiple competitions.}
+            % \vspace{-4pt}
+            % \resumeItem{Secured first position in Pitch Perfect, Startup Pitching Competition organised by Incubation Cell, NSUT}
+            % \vspace{-4pt}
+            % \resumeItem{Secured second position in M\&A Masterminds, Case Study Competition organised by IIT Delhi}
+            \vspace{-4pt}
+          \resumeItemListEnd
+        
+    % \resumeSubHeadingListEnd
+
+% -------------------- RESEARCH PROJECT --------------------
+\section{Research Work}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{Recreating Squid Games} $|$ \footnotesize\emph{\href{https://drive.google.com/file/d/1KhE4Wl5HmfVdzCf_14reIOO5fKT5YGBn/view?usp=sharing}{Read Report}}}{}
+        \resumeProjectHeading
+        {\textbf{Detection of IoT Botnet Attacks using Deep Learning} $|$ \footnotesize\emph{\href{https://drive.google.com/file/d/1Qe7ZyMYZTeJYe5cmQNJJODE4oIyQ-e7t/view?usp=sharing}{Read Report}}}{}
+    
+    \resumeSubHeadingListEnd
+
+
+% -------------------- POR --------------------
+\section{Position of Responsibility}
+    % \resumeSubHeadingListStart
+
+    %     \resumeProjectHeading
+    %     {\textbf{Head Graphic Designer \& Society Outreach} $|$ \footnotesize\emph{e-Cell NSUT}}
+    %     % \resumeItemListStart
+    %     %     \resumeItem{Project for the Mahindra Catapult Techathon, achieved first position nationwide.}
+    %     %     \resumeItem{Developed an application to ease data entry operator's workflow employeed by one of the biggest corporation.}
+    %     %     \resumeItem{Learned to write code with leading industry standards.}
+    %     %   \resumeItemListEnd
+          
+    %     \resumeProjectHeading
+    %     {\textbf{Secretary} $|$ \footnotesize\emph{Finance & Economics Society, NSUT}}{}
+    %     \resumeItemListStart
+    %         \resumeItem{Team project for the HackBVICAM Hackathon, became the finalists.}
+    %         \resumeItem{Developed an application to provide healthcare for expecting mothers.}
+    %         \resumeItem{Learned how to integrate UI/UX designs to develop user-friendly application.}
+    %       \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+
+    \vspace{4pt}
+        \resumeItemListStart 
+            \resumeItem{\textbf{Head Graphic Designer \& Society Outreach} $|$ \footnotesize\emph{e-Cell NSUT}}
+            \vspace{-4pt}
+            \resumeItem{\textbf{Secretary} $|$ \footnotesize\emph{Finance \& Economics Society, NSUT}}
+            \vspace{-4pt}
+            
+          \resumeItemListEnd
+
+
+\end{document}

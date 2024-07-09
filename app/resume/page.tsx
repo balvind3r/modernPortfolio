@@ -7,10 +7,13 @@ import { IoIosMail, IoMdArrowRoundBack } from "react-icons/io";
 import "@/app/globals.css";
 import { MdDateRange } from "react-icons/md";
 import { IoSchool } from "react-icons/io5";
+// import {Resume} from "@/public/Matty_s_Resume-2.pdf"
 const Resume = () => {
   const handleClick = () => {
     const link = document.createElement("a");
-    link.href = "./BalvinderSingh-Resume.pdf"; // Adjust the path as needed
+    link.href = "./BalvinderSingh_NSUT_.pdf"; // Adjust the path as needed
+    console.log(link.href);
+    
     link.download = "BalvinderSingh-Resume.pdf";
     document.body.appendChild(link);
     link.click();
