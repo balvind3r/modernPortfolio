@@ -19,7 +19,7 @@ const Resume = () => {
     link.click();
     document.body.removeChild(link);
   };
-  const email = "balvindersingh485280@gmail.com";
+  const email = "balvinders.pro@gmail.com";
 
   const handleMailtoClick = () => {
     window.location.href = `mailto:${email}`;
