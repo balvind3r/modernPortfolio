@@ -55,7 +55,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a quiz platform.",
+      title: "Currently learning full-stack development.",
       description: "The Inside Scoop",
       descClassName: "font-extralight text-sm md:text-sx lg:text-base",
       className: "md:col-span-3 md:row-span-2",
