@@ -81,7 +81,7 @@ const Resume = () => {
                 Languages Known
               </div>
               <div className="flex flex-row justify-center items-center gap-x-2 mt-2">
-                <p>C++, Python, JavaScript, TypeScript</p>
+                <p>C++, Python, Java, JavaScript / TypeScript, Ruby on Rails</p>
               </div>
             </div>
             <div className="flex flex-col lg:items-start items-center max-lg:text-center mt-4 w-60">
@@ -90,8 +90,8 @@ const Resume = () => {
               </div>
               <div className="flex flex-row justify-center items-center gap-x-2 mt-2">
                 <p>
-                  ShadCN, AceternityUI, ReactJs, NextJs, TailwindCSS, RTK,
-                  NodeJs, MongoDB, MySQL, Git/GitHub
+                  ReactUI-Libraries, NextJs, SpringBoot,
+                  NodeJs, MongoDB, MySQL, Git/GitHub, PostgreSQL, AWS
                 </p>
               </div>
             </div>
@@ -104,7 +104,11 @@ const Resume = () => {
                   <IoSchool className="w-8 h-8" />
                 </div>
                 <div className="flex-col gap-x-1">
+                <div className="flex flex-row justify-center items-center ">
                   <p>Netaji Subhas University of Technology</p>
+                    <p className="SG_300 lg:text-sm text-[#c3c0bc] gap-x-1">CGPA 7.57</p>
+                  </div>
+                  
                   <p className="SG_300 text-sm">
                     BTech in Computer Science with Specialisation in AI/ML
                   </p>
@@ -124,13 +128,40 @@ const Resume = () => {
                 Computer Science with Artificial Intelligence. I love to
                 experiment with new technologies and tech-stacks. In addition to
                 my academics, I have actively participated in and organized
-                various events. These experiences have helped me develop a
+                various hackathons. These experiences have helped me develop a
                 well-rounded skill set that complements my technical abilities,
                 preparing me for diverse challenges in the professional world.
               </p>
               <p className="SG_500 lg:text-2xl max-lg:text-xl max-lg:text-start mb-4">
                 Work Experience
               </p>
+            </div>
+            <div className="flex flex-col my-5 ">
+              <div className="SG_500 lg:text-2xl text-xl mb-2">
+                <p className="font-extrabold">Oyo Rooms Ltd.</p>
+                <div className="flex flex-row justify-between">
+                  <p>SDE Intern</p>
+                  <div className="flex flex-row SG_300 justify-center items-center lg:text-sm text-[#c3c0bc] gap-x-1">
+                    <MdDateRange color="#c3c0bc" className="h-5 w-5" />
+                    <p>Jan&apos;25 - Present </p>
+                    <p className="max-md:hidden">| Ongoing</p>
+                  </div>
+                </div>
+                <div className="SG_300 lg:text-base text-sm ml-6 mt-3 ">
+                  <ul className="list-disc">
+                    <li>
+                    Working in hotel-supply and fin-tech departments on Ruby on Rails, Java-Springboot and React
+                    tech-stacks.
+                    </li>
+                    <li>
+                      Handling critical tasks pertaining to global hotels, revenue and invoicing services.
+                    </li>
+                    <li>
+                      Managing time-critical development and on-call tasks.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div className="flex flex-col my-5 ">
               <div className="SG_500 lg:text-2xl text-xl mb-2">
@@ -147,19 +178,19 @@ const Resume = () => {
                   <ul className="list-disc">
                     <li>
                       Completely revamped LogiPulse - Mahindra&apos;s KPI monitoring
-                      software for warehouses
+                      software for warehouses.
                     </li>
                     <li>
-                      Developed user-friendly frontend using modern frameworks
+                    Developed user-friendly frontend, reducing data-operator&apos;s time by 80% using efficient keybindings.
                     </li>
                     <li>
-                      Implemented industry-level practices for version control
+                    Utilised client and server-side rendering for reduced server load and optimised state management.
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col my-3 ">
+            {/* <div className="flex flex-col my-3 ">
               <div className="SG_500 lg:text-2xl text-xl mb-4">
                 <p className="font-extrabold">SSPS Global</p>
                 <div className="flex flex-row justify-between">
@@ -187,7 +218,7 @@ const Resume = () => {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="border-b-2 w-full h-fit  SG_500 lg:text-2xl max-lg:text-xl max-lg:text-start pb-4">
               Awards & Achievements
             </div>
@@ -195,8 +226,14 @@ const Resume = () => {
               <div className="SG_300 lg:text-base text-sm ml-6 mt-3 mb-7">
                 <ul className="list-disc">
                   <li>
+                    Profecient in DSA with 1600+ Leetcode Rating.
+                  </li>
+                  <li>
                     Secured first position in Mahindra Logistics Catapult
                     Techathon.
+                  </li>
+                  <li>
+                    Among top 10 teams in Google APAC AI for Impact Hackathon
                   </li>
                   <li>
                     Among top 30 teams selected for Smart India Hackathon.
@@ -206,7 +243,7 @@ const Resume = () => {
                     SRMHacks.
                   </li>
                   <li>
-                    Acted as contingent leader for E-Summit IIT Bombay 2024, won
+                    Contingent leader for E-Summit IIT Bombay 2024, won
                     awards in multiple competitions.
                   </li>
                   <li>
@@ -216,8 +253,6 @@ const Resume = () => {
                 </ul>
               </div>
             </div>
-
-            
           </div>
         </div>
       </div>
